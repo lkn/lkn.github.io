@@ -1,44 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/pygments.css" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
+  </head>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <body>
 
-    </head>
-    <body>
+    <!-- Header -->
+    <div class="container-narrow">
+      <div class="masthead">
+        <ul class="nav nav-pills">
+          <li><a href="http://www.linkedin.com/pub/lynn-nguyen/5/303/78">LinkedIn</a></li>
+          <li><a href="http://facebook.com/lkn001">Facebook</a></li>
+        </ul>
+      </div> <!-- .container-narrow -->
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+    <!-- Navigation -->
+    <div id="navigation" class="container-narrow">
+      <div class="previous">
+        <!-- Something goes here -->
+      </div>
+      <div class="next">
+        <!-- Something goes here -->
+      </div>
+    <div class="clearfix"></div>
+    </div> <!-- .container-narrow -->
 
-          {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+    <!-- Blog Post -->
+    <div id="post-header" class="container-narrow">
+      <div class="title">{{ page.title }}</div>
+      <div class="date">{{ page.date }}</div>
+    </div>
+
+    <div id="blogpost">
+      <div class="page narrow-top-space">
+        <p><img src="" /></p>
+        <div class="container-narrow">
+        <p>{{ page.oneliner }}</p>
         </div>
+      </div>
+       
+    {{ content }}
+    </div>
 
-    </body>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/post.js"></script>
+  </body>
 </html>
