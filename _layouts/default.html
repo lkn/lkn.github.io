@@ -1,59 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
 
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/static/css/main.css" rel="stylesheet">
-    <link href="/static/css/pygments.css" rel="stylesheet">
-    <link href="/static/css/blog.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lynn Nguyen</title>
 
-  <body>
-
-    <!-- Header -->
-    <div class="container-narrow">
-      <div class="masthead">
-        <ul class="nav nav-pills">
-          <li><a href="http://www.linkedin.com/pub/lynn-nguyen/5/303/78">LinkedIn</a></li>
-          <li><a href="http://facebook.com/lkn001">Facebook</a></li>
-        </ul>
-      </div> <!-- .container-narrow -->
-
-    <!-- Navigation -->
-    <div id="navigation" class="container-narrow">
-      <div class="previous">
-        <!-- Something goes here -->
+  <link rel="stylesheet" href="/static/css/foundation/normalize.css">
+  <link rel="stylesheet" href="/static/css/foundation/foundation.css">
+  <link rel="stylesheet" href="/static/css/pygments.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/foundation/vendor/modernizr.js"></script>
+</head>
+<body>
+<header>
+   <div class="row">
+      <div class="large-12 columns">
+         <h1>Lynn Nguyen</h1>
+         <h4>Yup, it rhymes.</h4>
       </div>
-      <div class="next">
-        <!-- Something goes here -->
-      </div>
-    <div class="clearfix"></div>
-    </div> <!-- .container-narrow -->
+   </div>
+</header>
 
+<div class="row">
+  {{ content }}
+</div>
 
-    <!-- Blog Post -->
-    <div id="post-header" class="container-narrow">
-      <div class="title">{{ page.title }}</div>
-      <div class="date">{{ page.date }}</div>
-    </div>
-
-    <div id="blogpost">
-      <div class="page narrow-top-space">
-        <p><img src="" /></p>
-        <div class="container-narrow">
-        <p>{{ page.oneliner }}</p>
-        </div>
-      </div>
-       
-    {{ content }}
-    </div>
-
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/post.js"></script>
-  </body>
+  <script src="/static/js/foundation/vendor/jquery.js"></script>
+  <script src="/static/js/foundation/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
 </html>
