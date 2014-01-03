@@ -14,18 +14,56 @@
   <script src="/static/js/foundation/vendor/modernizr.js"></script>
 </head>
 <body>
-<header>
-   <div class="row">
-      <div class="large-12 columns">
-         <h1>Lynn Nguyen</h1>
-         <h4>Yup, it rhymes.</h4>
-      </div>
-   </div>
-</header>
 
-<div class="row">
-  {{ content }}
+<!-- Main content is wrapped inside the navigation bar. -->
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+    </nav>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        ...
+      </ul>
+    </aside>
+
+    <section class="main-section">
+
+        <!-- Header -->
+        <header>
+           <div class="row">
+              <div class="large-12 columns">
+                 <h1>Lynn Nguyen</h1>
+                 <h4>Yup, it rhymes.</h4>
+              </div>
+           </div>
+        </header>
+    
+        <div class="row">
+          <div class="medium-4 columns">
+          {{ content }}
+          </div>
+          <div class="medium-4 columns">
+            <ul class="side-nav">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+  <a class="exit-off-canvas"></a>
 </div>
+
+
 
   <script src="/static/js/foundation/vendor/jquery.js"></script>
   <script src="/static/js/foundation/foundation.min.js"></script>
