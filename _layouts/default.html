@@ -18,7 +18,8 @@
 <!-- Main content is wrapped inside the navigation bar. -->
 <div class="off-canvas-wrap">
   <div class="inner-wrap">
-    <nav class="tab-bar">
+    <!-- reference: view-source:http://foundation.zurb.com/docs/? -->
+    <nav class="tab-bar show-for-small">
       <section class="right-small">
         <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
       </section>
@@ -49,21 +50,21 @@
           {{ content }}
           </div>
           <div class="medium-4 columns">
+            <div class="hide-for-small">
             <ul class="side-nav">
               <li><a href="#">Link 1</a></li>
               <li><a href="#">Link 2</a></li>
               <li><a href="#">Link 3</a></li>
               <li><a href="#">Link 4</a></li>
-              </div>
             </ul>
+            </div>
           </div>
         </div>
     </section>
 
-  <a class="exit-off-canvas"></a>
+    <a class="exit-off-canvas"></a>
+  </div>
 </div>
-
-
 
   <script src="/static/js/foundation/vendor/jquery.js"></script>
   <script src="/static/js/foundation/foundation.min.js"></script>
