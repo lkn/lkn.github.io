@@ -25,14 +25,6 @@ function showNav() {
   $('#mainNav').removeClass('invisible').addClass('expanded');
   window.setTimeout(function(){$('#container').addClass('blurred');}, 40);
   $('#fullWidthContainer').removeClass('notScrolling');
-
-  // better handling of scrollbars in Windows
-  if (windows) {
-    $('body').width($('body').width());
-    $('body').css('overflow', 'hidden');
-  } else {
-    window.setTimeout(function(){$('body').addClass('noScroll');}, 200); // Firefox hack. Hides scrollbar as soon as menu animation is done
-  }
 }
 
 // hides the main menu popover
