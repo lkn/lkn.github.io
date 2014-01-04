@@ -1,0 +1,32 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>{{ page.title }}{% if page.layout == 'default' %} - {{ site.name }}{% endif %}</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="{% if page.layout == 'default' %}{{ site.description }}{% else %}{% if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}{% endif %}" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/static/css/foundation/normalize.css">
+  <link rel="stylesheet" href="/static/css/foundation/foundation.css">
+  <link rel="stylesheet" href="/static/css/pygments.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/foundation/vendor/modernizr.js"></script>
+  <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/style/ie9.css" />
+  <![endif]-->
+  <!--
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  -->
+</head>
+<body>
+  <!--[if lt IE 9]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+  {% include menu.html %}
+
+  <div id="container">

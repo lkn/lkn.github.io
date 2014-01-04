@@ -1,0 +1,25 @@
+  <nav id="mainNav" role="navigation">
+    <span class="menuIcon icon {% if page.url == '/index.html'%} transparent {% endif %}" title="Menu (Esc)" data-icon="/static/assets/menuIcon.svg">
+      <img src="/static/assets/menuIcon.svg" />
+    </span>
+
+    <div id="navigation">
+      <p><span class="heading">Lynn Nguyen</span><br/>
+        <span class="subheading">Team Awesome</span></p>
+      <p class="menu_label">Menu</p>
+
+      <section>
+        <div class="row">
+          <div class="large-12 columns">
+            <ul class="side-nav">
+              <li><a href="{{ site.url }}" class="home {% if page.url == '/index.html'%} current {% endif %}" title="Learn about me">Home</a></li>
+          <li><a href="{{ site.url }}/portfolio/" class="work {% if page.url == '/work/'%} current {% endif %}" title="Check out my work">Portfolio</a></li>
+          <li><a href="{{ site.url }}/blog/" class="blog {% if page.url == '/blog/'%} current {% endif %}" title="Read my blog">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul>
+
+      </section>
+    </div>
+  </nav>
