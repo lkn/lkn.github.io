@@ -1,6 +1,6 @@
 
 // hides main menu popover if class "expanded"
-$('#mainNav').on('click touchstart', function(e) {
+$('#mainNav').on('click', function(e) {
   showHideNav();
   e.preventDefault();
 })
@@ -28,3 +28,8 @@ function hideNav() {
     function(){$('#mainNav').removeClass('transition').removeClass('expanded');},
     100);
 }
+
+// clicking anywhere inside navigation or heading won’t close main menu popover
+$('#navigation section, #navigation .heading, #navigation .subheading, #navigation .menu_label').on('click touchstart', function(e){
+    e.stopPropagation();
+})

@@ -165,6 +165,10 @@ header h4 {
   transition: transform .25s;
 }
 
+#navigation section a {
+  font-size: 1.2em;
+}
+
 /* in landscape orientation make font-size of navigation smaller to fit in height of screen */
 @media screen and (max-device-width: 768px) and (orientation:landscape) {
   #navigation {
@@ -384,16 +388,6 @@ header h4 {
   /* more vertical padding for subheading */
   .heading {
     margin-bottom: -.65em;
-  }
-
-  /* more width for the columns */
-  #navigation section {
-    width: 65%;
-  }
-
-  /* bigger font size for "copyright" in menu */
-  #navigation section p {
-    font-size: .75em;
   }
 }
 
