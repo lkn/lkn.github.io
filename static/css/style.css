@@ -165,14 +165,6 @@ header h4 {
   transition: transform .25s;
 }
 
-/* content of navigation */
-#navigation section {
-  margin: 0 auto;
-  display: none;
-  position: relative;
-  text-align: center;
-}
-
 /* in landscape orientation make font-size of navigation smaller to fit in height of screen */
 @media screen and (max-device-width: 768px) and (orientation:landscape) {
   #navigation {
