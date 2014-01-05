@@ -11,6 +11,17 @@ Lynn, Izaak
 Dec 20 - Dec 28
 
 # Where
+* Hobart, TAS
+* Swansea, TAS
+* Bicheno, TAS
+* Launceston, TAS
+* White Beach, TAS
+* Port Arthur, TAS
+* Richmond, TAS
+* Brighton, TAS
+* Berriedale, TAS
+* Geeveston, TAS
+* Wellington Park, TAS
 
 # Expenses (AUD)
 * Room: $610
@@ -35,6 +46,7 @@ Total: $2064
 * Avis Car Rental
 
 ## Attractions
+* Sorrell Fruit Farm
 * Bicheno Penguin Tour
 * Freycinet National Park
   - Wineglass Bay
