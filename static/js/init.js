@@ -19,17 +19,14 @@ function showHideNav() {
   }
 }
 
-
 // shows the main menu popover
 function showNav() {
   $('#mainNav').removeClass('invisible').addClass('expanded');
-  window.setTimeout(function(){$('#container').addClass('blurred');}, 40);
   $('#fullWidthContainer').removeClass('notScrolling');
 }
 
 // hides the main menu popover
 function hideNav() {
-  $('#container').removeClass('blurred');
   $('#mainNav').addClass('transition');
   window.setTimeout(function(){$('body').removeClass('noScroll').removeAttr('style');}, 50); // allow animations to start before removing class (Firefox)
   window.setTimeout(function(){$('#mainNav').removeClass('transition').removeClass('expanded');}, 200);
